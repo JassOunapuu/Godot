@@ -21,7 +21,7 @@ func maksud(tunnid, tunnitasu):
 	return tasu
 	
 func keskmine(p):
-	var a = len(punktid)
+	var a = len(p)
 	var sum = 0
 	for i in p:
 		sum += i
