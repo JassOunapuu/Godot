@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://bg2.webp" type="Texture" id=1]
+[ext_resource path="res://VT323-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_color = Color( 0.113725, 0.792157, 0.188235, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.00123036
+anchor_top = 0.00209986
+anchor_right = 0.00123036
+anchor_bottom = 0.00209991
+margin_left = 1.52588e-05
+margin_top = -0.112274
+margin_right = 1024.0
+margin_bottom = 599.888
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kuulid" type="RichTextLabel" parent="."]
+margin_left = 21.2599
+margin_top = 546.148
+margin_right = 241.26
+margin_bottom = 588.148
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.113725, 0.792157, 0.188235, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+tab_size = 24
+text = "kuulid"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Elud" type="RichTextLabel" parent="."]
+margin_left = 762.094
+margin_top = 541.108
+margin_right = 982.094
+margin_bottom = 583.108
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.792157, 0.129412, 0.113725, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+tab_size = 24
+text = "Elud: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tekst" type="RichTextLabel" parent="."]
+margin_left = 40.1588
+margin_top = 27.0601
+margin_right = 260.159
+margin_bottom = 69.0601
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+tab_size = 24
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lasud" type="RichTextLabel" parent="."]
+margin_left = 744.455
+margin_top = 28.3201
+margin_right = 964.455
+margin_bottom = 70.3201
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+tab_size = 24
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOver" type="RichTextLabel" parent="."]
+margin_left = 397.595
+margin_top = 243.577
+margin_right = 683.595
+margin_bottom = 318.577
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.901961, 0.231373, 0.215686, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+tab_size = 24
+__meta__ = {
+"_edit_use_anchors_": false
+}

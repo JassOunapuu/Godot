@@ -9,7 +9,6 @@ var lask = 0
 var kuulid = 5
 
 func _ready():
-	$"GameOver".font
 	var sonad = ["kuningas", "maailmas", "kulda"]
 	var tekst = "Elas kord %s, kes üle kõige %s armastas %s."
 	

@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://minecraft.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10.037, 400.56 )
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 112.101, 155.771 )
+scale = Vector2( 2, 2 )
+
+[node name="Maapind" type="StaticBody2D" parent="."]
+position = Vector2( 175.559, 390.199 )
+scale = Vector2( 0.2, 0.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Maapind"]
+position = Vector2( 0.0609436, -1.35272 )
+scale = Vector2( 0.5, 0.500019 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Maapind"]
+position = Vector2( 0.241058, -1.13467 )
+scale = Vector2( 40, 1 )
+shape = SubResource( 1 )
+
+[node name="Maapind2" type="StaticBody2D" parent="."]
+position = Vector2( 372.619, 294.847 )
+scale = Vector2( 0.2, 0.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Maapind2"]
+position = Vector2( 0.0609436, -1.35272 )
+scale = Vector2( 0.5, 0.500019 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Maapind2"]
+position = Vector2( 0.241058, -1.13467 )
+scale = Vector2( 40, 1 )
+shape = SubResource( 1 )
+
+[node name="Maapind3" type="StaticBody2D" parent="."]
+position = Vector2( 603.582, 417.745 )
+scale = Vector2( 0.2, 0.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Maapind3"]
+position = Vector2( 0.0609436, -1.35272 )
+scale = Vector2( 0.5, 0.500019 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Maapind3"]
+position = Vector2( 0.241058, -1.13467 )
+scale = Vector2( 40, 1 )
+shape = SubResource( 1 )
+
+[node name="Maapind4" type="StaticBody2D" parent="."]
+position = Vector2( 762.502, 417.745 )
+scale = Vector2( 0.2, 0.2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Maapind4"]
+position = Vector2( 0.0609436, -1.35272 )
+scale = Vector2( 0.5, 0.500019 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Maapind4"]
+position = Vector2( 0.241058, -1.13467 )
+scale = Vector2( 40, 1 )
+shape = SubResource( 1 )
