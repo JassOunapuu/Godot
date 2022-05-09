@@ -1,0 +1,142 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://bg2.jpg" type="Texture" id=1]
+[ext_resource path="res://VT323-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_color = Color( 0.882353, 0.211765, 0.196078, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_color = Color( 0.223529, 0.866667, 0.14902, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 60
+font_data = ExtResource( 2 )
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArvutiPunktid" type="RichTextLabel" parent="TextureRect"]
+margin_left = 816.974
+margin_top = 39.0
+margin_right = 969.974
+margin_bottom = 85.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.662745, 0.443137, 0.827451, 1 )
+text = "Punktid:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerPunktid" type="RichTextLabel" parent="TextureRect"]
+margin_left = 70.152
+margin_top = 44.946
+margin_right = 223.152
+margin_bottom = 90.946
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.223529, 0.866667, 0.14902, 1 )
+text = "Punktid: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kivi" type="Button" parent="."]
+margin_left = 164.0
+margin_top = 505.0
+margin_right = 270.0
+margin_bottom = 549.0
+custom_fonts/font = SubResource( 2 )
+text = "kivi"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paber" type="Button" parent="."]
+margin_left = 458.166
+margin_top = 502.879
+margin_right = 564.166
+margin_bottom = 546.879
+custom_fonts/font = SubResource( 2 )
+text = "paber"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kaarid" type="Button" parent="."]
+margin_left = 740.632
+margin_top = 496.181
+margin_right = 846.632
+margin_bottom = 540.181
+custom_fonts/font = SubResource( 2 )
+text = "käärid"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Valik" type="RichTextLabel" parent="."]
+margin_left = 245.903
+margin_top = 259.941
+margin_right = 460.903
+margin_bottom = 334.941
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 0.223529, 0.866667, 0.14902, 1 )
+text = "Mängija"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arvuti" type="RichTextLabel" parent="."]
+margin_left = 599.811
+margin_top = 264.0
+margin_right = 920.811
+margin_bottom = 339.0
+custom_fonts/normal_font = SubResource( 3 )
+custom_colors/default_color = Color( 0.662745, 0.443137, 0.827451, 1 )
+text = "arvuti"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pealkiri" type="RichTextLabel" parent="."]
+margin_left = 386.406
+margin_top = 22.1886
+margin_right = 690.406
+margin_bottom = 64.1886
+custom_fonts/normal_font = SubResource( 4 )
+text = "Kivi-paber-käärid"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tulemus" type="RichTextLabel" parent="."]
+margin_left = 414.0
+margin_top = 107.0
+margin_right = 768.0
+margin_bottom = 183.0
+custom_fonts/normal_font = SubResource( 5 )
+text = "Tulemus"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Kivi" to="." method="_on_Kivi_pressed"]
+[connection signal="pressed" from="Paber" to="." method="_on_Paber_pressed"]
+[connection signal="pressed" from="Kaarid" to="." method="_on_Kaarid_pressed"]
