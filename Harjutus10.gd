@@ -6,6 +6,8 @@ const UP = Vector2(0,-1)
 const GRAV = 100
 const JUMPHIGH = -1500
  
+var character_pos
+
 var motion = Vector2()
  
 func _physics_process(delta):
